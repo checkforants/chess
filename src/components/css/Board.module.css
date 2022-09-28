@@ -1,0 +1,87 @@
+.rows {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #b0927d;
+  height: 500px;
+  width: 500px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: column-reverse;
+          flex-direction: column-reverse;
+  border: 20px solid #ad530e;
+  position: relative;
+}
+
+.reversed {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.coordsX {
+  font-weight: bold;
+  bottom: 0%;
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  height: 15px;
+  font-size: 12px;
+  width: 100%;
+  text-align: left;
+}
+
+.coordsX.reversed {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+}
+
+.coordsX .x {
+  padding: 0 4px;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 12.5%;
+          flex: 0 1 12.5%;
+}
+
+.coordsY {
+  font-weight: bold;
+  width: 15px;
+  font-size: 12px;
+  right: 0%;
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: column-reverse;
+          flex-direction: column-reverse;
+  height: 100%;
+}
+
+.coordsY.reversed {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.coordsY .y {
+  padding: 4px 0px;
+}
+
+.black {
+  color: #6f472b;
+}
+
+.white {
+  color: #c5a792;
+}

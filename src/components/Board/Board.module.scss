@@ -1,0 +1,53 @@
+@import '../../colors.scss'; 
+.rows{
+	display: flex;
+	background-color: rgb(176, 146, 125);
+	height: 500px;
+	width: 500px;
+	flex-direction: column-reverse;
+	border: 20px solid rgb(173, 83, 14);
+	position: relative;
+}
+.reversed{
+	flex-direction: column;
+}
+.coordsX{
+	font-weight: bold;
+	bottom: 0%;
+	position: absolute;
+	display: flex;
+	flex-direction: row;
+	height: 15px;
+	font-size: 12px;
+	width: 100%;
+	text-align: left;
+	&.reversed{
+		flex-direction: row-reverse;
+	}
+	.x{
+		padding: 0 4px;
+		flex: 0 1 12.5%;
+	}
+}
+.coordsY{
+	font-weight: bold;
+	width: 15px;
+	font-size: 12px;
+	right: 0%;
+	position: absolute;
+	display: flex;
+	flex-direction: column-reverse;
+	height: 100%;
+	&.reversed{
+		flex-direction: column;
+	}
+	.y{
+		padding: 4px 0px;
+	}
+}
+.black{
+	color: $blackSquare;
+}
+.white{
+	color: $whiteSquare;
+}

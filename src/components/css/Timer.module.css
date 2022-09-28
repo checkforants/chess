@@ -1,0 +1,28 @@
+.block {
+  width: 200px;
+  height: 100px;
+  background-color: #3f1b0b;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+.minutes, .seconds {
+  color: white;
+  padding: auto;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  height: 40px;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.seconds::before {
+  content: ':';
+}

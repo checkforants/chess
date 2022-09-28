@@ -1,0 +1,29 @@
+.square {
+  line-height: 1.4;
+  font-size: 23px;
+  color: black;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: auto;
+}
+
+.black {
+  background-color: #6f472b;
+}
+
+.white {
+  background-color: #c5a792;
+}
+
+.possibleMove {
+  -webkit-box-shadow: -11px 75px 8px 0px rgba(147, 185, 213, 0.8) inset;
+          box-shadow: -11px 75px 8px 0px rgba(147, 185, 213, 0.8) inset;
+}
